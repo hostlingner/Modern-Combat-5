@@ -1,0 +1,35 @@
+hostling = 1
+
+function home ()
+
+multi = gg.multiChoice({
+
+"🔓:   Anti Crash Account's"
+
+}, nil,"     ㅤ\n                ━━━━━━━━━━━━━━━〘 🦊 〙━━━━━━━━━━━━━━━\n                                        ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬\n                  ᴘʀᴏᴊᴇᴄᴛ ᴄʀᴇᴀᴛᴇᴅ ᴀɴᴅ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ᴍᴀɢᴀsɪʀᴀ ᴛᴇᴀᴍ\n                                              sʜᴏᴘ: ᴍᴀɢᴀsɪʀᴀ.ᴄᴏᴍ\n                                       ▬▭▬▭▬ ✦✧✦ ▬▭▬▭▬                                              \n               ━━━━━━━━━━━━━━━〘 🦊 〙━━━━━━━━━━━━━━━\n")
+
+if multi == nil then else
+if multi[1] == true then h1 ()
+end
+end
+
+hostling = -1
+end
+
+function h1 ()
+
+gg.processToggle()
+
+gg.setRanges(gg.REGION_C_ALLOC)
+gg.searchNumber(":message", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(9999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll(":global", gg.TYPE_BYTE)
+gg.clearResults()
+end
+
+while true do
+if gg.isVisible(true) then
+gg.setVisible(false) hostling = 1
+end
+if hostling == 1 then home() end
+end
